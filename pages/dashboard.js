@@ -1,6 +1,7 @@
-import useAuth from "../hooks/useAuth";
+import useAuth from "src/hooks/useAuth";
+
 const Dashboard = () => {
-  const { user, signin } = useAuth();
+  const { user } = useAuth();
   return (
     <div>
       <h1>Bem vindo {user?.displayName}!</h1>
